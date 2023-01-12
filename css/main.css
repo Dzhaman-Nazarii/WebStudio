@@ -70,6 +70,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 ul {
@@ -305,7 +306,7 @@ a {
 }
 
 .logo {
-  margin-right: 45px;
+  margin-right: auto;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
