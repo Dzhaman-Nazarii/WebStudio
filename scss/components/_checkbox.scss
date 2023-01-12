@@ -1,0 +1,29 @@
+.checkbox {
+	display: flex;
+	margin-left: 13px;
+	&__input {
+			appearance: none;
+		}
+	&__icon {
+			position: absolute;
+			margin-right: 7px;
+			fill: transparent;
+			border: 2px solid black;
+			border-radius: 4px;
+	}
+	&__input:checked+&__icon {
+		fill: var(--secondary-color);
+		background-color: var(--color-addition);
+		border: 1px solid var(--color-addition);
+	}
+	&__label {
+		position: relative;
+		padding-left: 24px;
+		font-size: 14px;
+		color: var(--color-paragraph);
+	}
+	&__link {
+		color: var(--color-addition);
+		text-decoration-line: underline;
+	}
+}

@@ -1,0 +1,32 @@
+.contact {
+	&__header {
+			display: flex;
+			gap: 50px;}
+	&__list {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.142;
+		letter-spacing: 0.02em;
+		color: var(--color-paragraph);
+		list-style-type: none;}
+	&__link {
+		display: flex;
+		padding: 32px 0;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.142;
+		letter-spacing: 0.02em;
+		cursor: auto;
+		cursor: pointer;
+		color: var(--color-paragraph);
+		align-items: center;
+		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover, &:focus {
+			cursor: pointer;
+			color: var(--color-addition);}
+	}
+	&__icon {
+		margin-right: 10px;
+		fill: currentColor;
+	}
+}

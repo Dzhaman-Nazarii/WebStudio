@@ -1,0 +1,57 @@
+.button {
+	display: block;
+	margin: 0 auto;
+	font-family: 'Roboto';
+	height: 50px;
+	width: 216px;
+	background: var(--color-addition);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+	letter-spacing: 0.06em;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.875;
+	color: var(--secondary-color);
+	cursor: pointer;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) color;
+	&:hover, &:focus {
+		background: var(--color-button-change);
+	}
+	&__letter {
+		position: absolute;
+		display: block;
+		margin: 0 auto;
+		margin-left: 400px;
+		padding-right: 30px;
+		font-family: 'Roboto';
+		height: 50px;
+		width: 200px;
+		background: var(--color-addition);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+		border: none;
+		letter-spacing: 0.06em;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.875;
+		color: var(--secondary-color);
+		cursor: pointer;
+		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) color;
+		&::placeholder {
+				color: var(--secondary-color);
+			}
+	}
+	&__icon {
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 50%;
+		background-color: var(--secondary-color);
+		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover {
+				fill: var(--color-addition);
+			}
+	}
+}

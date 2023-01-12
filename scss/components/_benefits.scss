@@ -1,0 +1,30 @@
+.benefits {
+	&__section {
+			padding: 0 0 94px 0;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__text {
+		position: relative;
+	}
+	&__description {
+		position: absolute;
+		display: flex;
+		width: 100%;
+		height: 70px;
+		left: 0;
+		bottom: 0;
+		margin: 0;
+		color: var(--secondary-color);
+		background: rgba(47, 48, 58, 0.8);
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.142;
+		align-items: center;
+		justify-content: center;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	}
+}
