@@ -2,6 +2,9 @@
 	&__header {
 			display: flex;
 			gap: 50px;}
+	@media (max-width: 480px) {
+		display: none;
+	}
 	&__list {
 		font-weight: 500;
 		font-size: 14px;

@@ -36,11 +36,16 @@
 	&__item {
 		display: flex;
 		padding-top: 9px;
+		@media (max-width: 480px) {
+				align-items: center;
+				justify-content: center;
+			}
 		&--down {
 				padding-top: 20px;
 			}
 	}
 	&__header {
+		margin-top: 60px;
 		font-weight: 700;
 		margin-bottom: 20px;
 		font-size: 14px;
@@ -52,7 +57,8 @@
 	&__list {
 		display: flex;
 		align-items: center;
-		gap: 10px;
+		justify-content: center;
+		gap: 10px
 	}
 	&__link {
 		display: flex;
@@ -71,27 +77,13 @@
 		}
 	}
 	&__div {
-		display: flex;
-		&--first {
-				margin-right: 70px;
-			}
-		&--second {
-			margin-top: 12px;
-		}
-		&--third {
-			margin-left: 90px;
-			margin-top: 12px;
-		}
-	}
-	&__letter {
-		display: flex;
-		margin-right: 12px;
+		text-align: center;
 	}
 	&__icon {
-		position: absolute;
-		top: 50%;
+		position: relative;
+		top: 17px;
+		left: 7px;
 		transform: translateY(-50%);
-		right: 25px;
 		fill: var(--secondary-color);
 	}
 }

@@ -19,10 +19,8 @@
 		background: var(--color-button-change);
 	}
 	&__letter {
-		position: absolute;
-		display: block;
+		position: relative;
 		margin: 0 auto;
-		margin-left: 400px;
 		padding-right: 30px;
 		font-family: 'Roboto';
 		height: 50px;
