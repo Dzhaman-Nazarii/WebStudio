@@ -856,7 +856,6 @@ a {
 
 .input__email {
   margin-bottom: 20px;
-  margin-right: 12px;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -864,6 +863,11 @@ a {
   border-radius: 4px;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 380px) {
+  .input__email {
+    width: auto;
+  }
 }
 .input__email::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
