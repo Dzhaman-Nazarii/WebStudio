@@ -1,24 +1,25 @@
-.business__section {
-	padding: 94px 0;
-	color: var(--secondary-color);
-	background: #2F303A;
-	background-image: linear-gradient(to right,
-			rgba(47, 48, 58, 0.4),
-			rgba(47, 48, 58, 0.4)),
-		url('../images/hero_bg.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	padding: 200px 0;
-}
-
-.business__title {
-	margin-bottom: 30px;
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.363;
-	text-align: center;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	color: var(--secondary-color);
+.business {
+	&__section {
+		padding: 94px 0;
+		color: var(--secondary-color);
+		background: #2F303A;
+		background-image: linear-gradient(to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)),
+			url('../images/hero_bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		padding: 200px 0;
+	}
+	&__title {
+		margin-bottom: 30px;
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 1.363;
+		text-align: center;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--secondary-color);
+	}
 }
