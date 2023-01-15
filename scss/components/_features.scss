@@ -1,10 +1,16 @@
 .features {
 	&__section {
+		padding: 60px 0;
+		@media (min-width: 1200px) {
 			padding: 94px 0;
+		}
 	}
 	&__list {
 		@media (min-width: 1200px) {
 			display: flex;
+		}
+		@media (min-width: 768px) {
+			columns: 2;
 		}
 	}
 	&__item {
