@@ -7,7 +7,7 @@
 		list-style-type: none;
 		display: flex;
 		justify-content: space-between;
-		@media (max-width: 480px) {
+		@media (max-width: 768px) {
 			display: block;
 		}
 	}
@@ -22,9 +22,13 @@
 }
 
 .person {
-	@media (max-width: 480px) {
+	@media (max-width: 768px) {
 		margin: 0 auto;
-		}
+		padding-bottom: 30px;
+	&:last-child {
+		padding-bottom: 0px;
+	}
+	}
 	&__header {
 		margin: 0;
 		margin-bottom: 10px;

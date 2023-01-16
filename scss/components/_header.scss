@@ -30,7 +30,7 @@
 	&__menu {
 		display: flex;
 		gap: 50px;
-		@media (max-width: 480px) {
+		@media (max-width: 768px) {
 				display: none;
 		}
 	}
@@ -76,7 +76,7 @@
 	&__burger {
 		display: none;
 
-		@media (max-width: 480px) {
+		@media (max-width: 768px) {
 			display: block;
 			border: none;
 			background-color: white;

@@ -120,7 +120,6 @@ a {
 .button__letter {
   position: relative;
   margin: 0 auto;
-  padding-right: 30px;
   font-family: "Roboto";
   height: 50px;
   width: 200px;
@@ -228,7 +227,7 @@ a {
   display: flex;
   gap: 50px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .header__menu {
     display: none;
   }
@@ -272,7 +271,7 @@ a {
 .header__burger {
   display: none;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .header__burger {
     display: block;
     border: none;
@@ -319,10 +318,8 @@ a {
   color: var(--color-addition);
 }
 
-@media (max-width: 480px) {
-  .contact__header {
-    display: none;
-  }
+.contact__header {
+  display: none;
 }
 @media (min-width: 768px) {
   .contact__header {
@@ -516,7 +513,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .our-team__card {
     display: block;
   }
@@ -531,9 +528,13 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .person {
     margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  .person:last-child {
+    padding-bottom: 0px;
   }
 }
 .person__header {
@@ -625,23 +626,21 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .clients__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    gap: 30px;
   }
 }
 .clients__item {
-  width: 210px;
+  width: calc((100% - 30px) / 2);
   height: 90px;
-  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .clients__item {
     width: 170px;
+    margin-bottom: 30px;
   }
 }
 .clients__link {
@@ -823,7 +822,7 @@ a {
   display: flex;
   padding-top: 9px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .footer__item {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -892,9 +891,24 @@ a {
           transform: translateY(-50%);
   fill: var(--secondary-color);
 }
+.footer_letter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 .input__email {
-  margin-bottom: 20px;
+  margin: 0 auto;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1179,14 +1193,14 @@ a {
   padding: 0 15px;
   margin: 0 auto;
 }
-@media (min-width: 480px) {
+@media (min-width: 767px) {
   .container {
-    width: 480px;
+    width: 767px;
   }
 }
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 1199px;
   }
 }
 @media (min-width: 1200px) {

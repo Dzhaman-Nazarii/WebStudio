@@ -5,17 +5,17 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
-		@media (max-width: 480px) {
+		@media (max-width: 768px) {
 			flex-wrap: wrap;
-			justify-content: center;
+			gap: 30px;
 		}
 	}
 	&__item {
-		width: 210px;
+		width: calc((100% - 30px) / 2);
 		height: 90px;
-		margin-bottom: 30px;
 		@media (min-width: 768px) {
 			width: 170px;
+			margin-bottom: 30px;
 		}
 	}
 	&__link {
