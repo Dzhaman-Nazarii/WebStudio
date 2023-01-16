@@ -3,14 +3,11 @@
 			padding: 94px 0;
 	}
 	&__list {
+		display: flex;
 		flex-wrap: wrap;
 		gap: 30px;
 	}
-		@media (max-width: 768px) {
-			flex-wrap: wrap;
-			gap: 30px;
-		}
-	}
+
 	&__item {
 		width: 210px;
 		height: 90px;
@@ -37,4 +34,5 @@
 			fill: var(--color-addition);
 			border: 1px solid var(--color-addition);
 		}
+	}
 }

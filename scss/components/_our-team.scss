@@ -7,7 +7,8 @@
 		list-style-type: none;
 		display: flex;
 		justify-content: space-between;
-		@media (max-width: 768px) {
+		flex-wrap: wrap;
+		@media (max-width: 767px) {
 			display: block;
 		}
 	}
