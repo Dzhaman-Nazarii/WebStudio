@@ -4,13 +4,13 @@
 	&__container {
 		display: flex;
 		align-items: center;
-		@media (min-width: 1200px) {
+		@media (min-width: 768px) {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			gap: 50px;
 		}
-		@media (min-width: 768px) {
+		@media (min-width: 1200px) {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -28,10 +28,12 @@
 	}
 
 	&__menu {
-		display: flex;
-		gap: 50px;
-		@media (max-width: 768px) {
-				display: none;
+		display: none;
+		@media (min-width: 767px) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 50px;
 		}
 	}
 
@@ -74,12 +76,10 @@
 		}
 	}
 	&__burger {
-		display: none;
-
-		@media (max-width: 768px) {
-			display: block;
-			border: none;
-			background-color: white;
+		border: none;
+		background-color: white;
+		@media (min-width: 768px) {
+			display: none;
 		}
 	}
 }
