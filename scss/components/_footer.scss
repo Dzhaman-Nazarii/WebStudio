@@ -53,6 +53,9 @@
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
 		color: var(--secondary-color);
+		@media (min-width: 768px) {
+			margin-top: 0;
+		}
 	}
 	&__list {
 		display: flex;
@@ -78,6 +81,11 @@
 	}
 	&__div {
 		text-align: center;
+		&--third {
+			@media (min-width: 768px) {
+				padding-top: 60px;
+			}
+		}
 	}
 	&__icon {
 		position: relative;
@@ -92,5 +100,18 @@
 		gap: 30px;
 		flex-direction: column;
 		align-items: center;
+	}
+	&__index {
+		@media (min-width: 768px) {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+	&__contact {
+		@media (min-width: 768px) {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+		}
 	}
 }
