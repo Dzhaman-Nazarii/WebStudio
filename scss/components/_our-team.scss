@@ -1,7 +1,10 @@
 .our-team {
 	&__section {
-		padding: 94px 0;
+		padding: 60px 0;
 		background: var(--color-button);
+		@media (min-width: 1200px) {
+			padding: 94px 0;
+		}
 	}
 	&__card {
 		list-style-type: none;
@@ -90,15 +93,4 @@
 			fill: var(--secondary-color);
 		}
 	}
-}
-
-.header-section {
-	display: flex;
-	justify-content: center;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.166;
-	color: var(--color-hero);
-	letter-spacing: 0.03em;
-	margin-bottom: 50px;
 }

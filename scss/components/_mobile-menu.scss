@@ -29,6 +29,9 @@
 	}
 	&__nav {
 		margin-bottom: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
 	}
 	&__page {
 		color: var(--color-hero);
@@ -45,6 +48,9 @@
 	}
 	&__contact {
 		margin-bottom: 64px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
 	}
 	&__tel {
 		font-weight: 500;

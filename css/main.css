@@ -155,17 +155,27 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 200px 0;
+  padding: 118px 0;
+}
+@media (min-width: 768px) {
+  .business__section {
+    padding: 200px 0;
+  }
 }
 .business__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.363;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-color);
+}
+@media (min-width: 1200px) {
+  .business__title {
+    font-size: 44px;
+  }
 }
 
 .button {
@@ -349,7 +359,12 @@ a {
 }
 
 .clients__section {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media (min-width: 1200px) {
+  .clients__section {
+    padding: 94px 0;
+  }
 }
 .clients__list {
   display: -webkit-box;
@@ -366,7 +381,6 @@ a {
 @media (min-width: 768px) {
   .clients__item {
     width: 226px;
-    margin-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -450,7 +464,7 @@ a {
   display: flex;
   padding: 32px 0;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.142;
   letter-spacing: 0.02em;
   cursor: auto;
@@ -469,6 +483,11 @@ a {
 @media (min-width: 768px) {
   .contact__link {
     padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
   }
 }
 .contact__icon {
@@ -491,9 +510,7 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    gap: 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -505,11 +522,12 @@ a {
 }
 @media (min-width: 768px) {
   .features__item {
-    margin-right: 30px;
-    width: 270px;
+    width: 354px;
   }
-  .features__item:last-child {
-    margin-right: 0;
+}
+@media (min-width: 1200px) {
+  .features__item {
+    width: 270px;
   }
 }
 .features__box {
@@ -526,6 +544,15 @@ a {
   border-radius: 4px;
   background-color: var(--color-button);
   margin-bottom: 30px;
+  margin-top: 30px;
+}
+.features__box:first-child {
+  margin-top: 0px;
+}
+@media (min-width: 768px) {
+  .features__box {
+    margin-top: 0px;
+  }
 }
 .features__header {
   margin-bottom: 10px;
@@ -541,6 +568,11 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (min-width: 768px) {
+  .features__header {
+    display: block;
+  }
 }
 .features__paragraph {
   font-size: 14px;
@@ -619,6 +651,11 @@ a {
 @media (min-width: 768px) {
   .footer__header {
     margin-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__header {
+    text-align: start;
   }
 }
 .footer__list {
@@ -940,6 +977,26 @@ a {
   color: var(--color-paragraph);
 }
 
+.header-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.166;
+  color: var(--color-hero);
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .header-section {
+    font-size: 36px;
+  }
+}
+
 .input__email {
   margin: 0 auto;
   width: 358px;
@@ -1062,6 +1119,14 @@ a {
 }
 .mobile-menu__nav {
   margin-bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
 }
 .mobile-menu__page {
   color: var(--color-hero);
@@ -1079,6 +1144,14 @@ a {
 }
 .mobile-menu__contact {
   margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
 }
 .mobile-menu__tel {
   font-weight: 500;
@@ -1160,8 +1233,13 @@ a {
 }
 
 .our-team__section {
-  padding: 94px 0;
+  padding: 60px 0;
   background: var(--color-button);
+}
+@media (min-width: 1200px) {
+  .our-team__section {
+    padding: 94px 0;
+  }
 }
 .our-team__card {
   list-style-type: none;
@@ -1278,21 +1356,6 @@ a {
 }
 .socials__icon:hover, .socials__icon:focus {
   fill: var(--secondary-color);
-}
-
-.header-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
-  color: var(--color-hero);
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 
 .portfolio__container {
