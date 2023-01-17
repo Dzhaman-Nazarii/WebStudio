@@ -6,6 +6,10 @@
 		flex-direction: column;
 		gap: 10px;
 	}
+	@media (min-width: 1200px) {
+		display: flex;
+		gap: 10px;
+		
 	}
 	&__list {
 		font-weight: 500;
@@ -16,6 +20,10 @@
 		list-style-type: none;}
 		@media (min-width: 768px) {
 			flex-direction: column;
+		}
+		@media (min-width: 1200px) {
+			flex-direction: row;
+		}
 		}
 	&__link {
 		display: flex;
