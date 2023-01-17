@@ -92,12 +92,13 @@
 			}
 		}
 		&--third {
-			@media (min-width: 768px) and (max-width: 1199px) {
+			@media (min-width: 768px) {
 				text-align: center;
 				padding-top: 60px;
 			}
 			@media (min-width: 1200px) {
 				margin-top: 15px;
+				padding-top: 0;
 			}
 		}
 	}
