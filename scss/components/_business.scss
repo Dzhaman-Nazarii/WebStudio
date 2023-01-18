@@ -1,20 +1,76 @@
 .business {
-	&__section {
-		padding: 94px 0;
-		color: var(--secondary-color);
-		background: #2F303A;
+	margin: 0 auto;
+	max-width: 480px;
+	min-height: 400px;
+	padding: 118px 30px;
+	background-color: #2F303A;
+	background-image: linear-gradient(to right,
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)),
+		url('../images/hero_bg-mobile.jpg');
+	// url('../images/hero.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	// 480px 400px;
+	background-position: center;
+	text-align: center;
+
+	@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		& {
+			background-image: linear-gradient(to right,
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)),
+				url('../images/hero_bg-mobile@2x.jpg');
+		}
+	}
+
+	@media screen and (min-width:577px) {
+		max-width: 768px;
+		padding: 118px 60px;
+		background-image: linear-gradient(to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)),
+			url('../images/hero_bg-tablet.jpg');
+		background-size: cover;
+		// background-size: 768px 400px;
+
+		@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+			& {
+				background-image: linear-gradient(to right,
+						rgba(47, 48, 58, 0.4),
+						rgba(47, 48, 58, 0.4)),
+					url('../images/hero_bg-tablet@2x.jpg');
+			}
+		}
+	}
+
+	@media screen and (min-width:961px) {
+		max-width: 1600px;
+		min-height: 600px;
+		padding: 200px 0;
 		background-image: linear-gradient(to right,
 				rgba(47, 48, 58, 0.4),
 				rgba(47, 48, 58, 0.4)),
 			url('../images/hero_bg.jpg');
-		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: center center;
-		padding: 118px 0;
-		@media (min-width: 768px) {
-			padding: 200px 0;
+		// background-size: 1600px 600px;
+
+		@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+			& {
+				background-image: linear-gradient(to right,
+						rgba(47, 48, 58, 0.4),
+						rgba(47, 48, 58, 0.4)),
+					url('../images/hero_bg@2x.jpg');
+			}
 		}
 	}
+
 	&__title {
 		margin-bottom: 30px;
 		font-weight: 900;
