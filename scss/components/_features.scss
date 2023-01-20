@@ -20,11 +20,17 @@
 	}
 
 	&__item {
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
 		@media (min-width: 768px) {
 			width: 354px;
+			margin-bottom: 0px;
 		}
 		@media (min-width: 1200px) {
 			width: 270px;
+			margin-bottom: 0px;
 		}
 	}
 
