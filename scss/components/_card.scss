@@ -56,6 +56,11 @@
 		letter-spacing: 0.03em;
 		margin: 0 auto;
 	}
+	&__item {
+		@media (min-width: 768px) {
+			width: calc((100% - 30px) / 2);
+		}
+	}
 }
 
 .overlay {
