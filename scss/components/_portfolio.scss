@@ -1,5 +1,8 @@
 .portfolio {
 	&__container {
-			padding: 94px 0
+		padding: 60px 0;
+		@media (min-width:768px) {
+			padding: 94px 0;
+		}
 	}
 }

@@ -1,8 +1,12 @@
 .menu {
 	&__list {
-			display: flex;
+		display: flex;
+		gap: 15px;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+		@media (min-width: 768px) {
 			justify-content: center;
-			margin-bottom: 50px;
+		}
 	}
 	&__item {
 		margin-right: 8px;

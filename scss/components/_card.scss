@@ -18,6 +18,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 30px;
+		justify-content: center;
+		@media (min-width: 768px) {
+			justify-content: start;
+		}
 	}
 	&__text {
 		position: absolute;
